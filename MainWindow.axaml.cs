@@ -15,6 +15,7 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
+
     public void ClickHandler(object sender, RoutedEventArgs args)
     {
         if (sender is Button clickedButton)
@@ -25,6 +26,17 @@ public partial class MainWindow : Window
                     if ((Username.Text == "Migratedwolf") && (Password.Text == "Echo123e#"))
                     {
                         clickedButton.Content = "Logout";
+                        LoginFailed.IsVisible = false;
+
+                        var secondWindow = new SecondWindow();
+                        secondWindow.Show();
+
+                    // Optionally hide or close MainWindow
+                    this.Hide(); // or this.Close();
+                    }
+                    else
+                    {
+                        LoginFailed.IsVisible = true;
                     }
                     break;
                 case "Signup":
