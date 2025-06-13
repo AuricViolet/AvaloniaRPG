@@ -7,4 +7,7 @@
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>
+    <Application.Resources>
+        <FontFamily x:Key="Nabla">/Assets/fonts#Nabla</FontFamily>
+    </Application.Resources>
 </Application>

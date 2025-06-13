@@ -1,6 +1,11 @@
 using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
+using Avalonia.Interactivity;
+using Avalonia.Media.Imaging;
+using Avalonia.Platform;
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace TestApp;
 

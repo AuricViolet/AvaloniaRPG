@@ -2,18 +2,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="602" d:DesignHeight="1004"
+        mc:Ignorable="d"
         x:Class="TestApp.MainWindow"
         Title="Avalonia RPG"
-        Icon= "/Assets/knight.ico"
+        Icon= "/Assets/icons/knight.ico"
         MinWidth="640"
-        MinHeight="360" >
+        MinHeight="360"
+        Foreground="{DynamicResource Theme_TextBrush}" d:DesignWidth="1360" d:DesignHeight="768">
 
     <Viewbox Stretch="UniformToFill" StretchDirection="Both" MinWidth="640" MinHeight="360" >
-        <Grid Height="602" Background="#FF08171F" Width="1004" MinWidth="640" MinHeight="360">
+     <Grid Height="602" Background="#FF08171F" Width="1004" MinWidth="640" MinHeight="360">
         <TextBox x:Name= "Username" Margin="416,240,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Height="32" TextAlignment="Left" />
         <TextBox x:Name= "Password" PasswordChar= "*" Margin="416,296,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Height="32" TextAlignment="Left" />
-        <TextBlock FontSize="29" TextAlignment="Center" Text="Avalonia" Canvas.Left="448" Canvas.Top="216" Margin="344,160,320,336" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <TextBlock FontFamily="{StaticResource Nabla}" FontSize="29" TextAlignment="Center" Text="Avalonia" Canvas.Left="448" Canvas.Top="216" Margin="344,160,320,336" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         <TextBlock Text="Username:" FontSize="14" Margin="330,248,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" />
         <TextBlock Text="Password:" FontSize="14" Margin="334,304,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24" />
         <Button x:Name="Signup" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ClickHandler" Margin="528,368,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Height="32" Background="#FF252F47" Content="Sign Up" />

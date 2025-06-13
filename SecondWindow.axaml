@@ -2,8 +2,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d"
         x:Class="TestApp.SecondWindow"
-        Title="SecondWindow">
-  Welcome to Avalonia!
+        Title="Avalonia RPG"
+        Icon= "/Assets/knight.ico"
+        MinWidth="640"
+        MinHeight="360"
+        Foreground="{DynamicResource Theme_TextBrush}" d:DesignWidth="1360" d:DesignHeight="768">
+
+    <Viewbox Stretch="UniformToFill" StretchDirection="Both" MinWidth="640" MinHeight="360" >
+    <Grid Height="602" Background="#FF08171F" Width="1004" MinWidth="640" MinHeight="360">
+        <Button Content="Attack" Margin="216,300,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="264" Height="80" Background="#FF252F47" FontSize="30" />
+        <Button Content="Block" Margin="216,406,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="264" Height="80" Background="#FF252F47" FontSize="30" />
+        <Button Content="Magic" Margin="504,300,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="264" Height="80" Background="#FF252F47" FontSize="30" />
+        <Button Content="Flee" Margin="504,406,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="264" Height="80" FontSize="30" Background="#FF252F47" />
+    </Grid>
+    </Viewbox>
 </Window>
+

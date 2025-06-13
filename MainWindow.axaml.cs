@@ -32,7 +32,7 @@ public partial class MainWindow : Window
                         secondWindow.Show();
 
                     // Optionally hide or close MainWindow
-                    this.Hide(); // or this.Close();
+                    this.Close(); // or this.Close();
                     }
                     else
                     {
